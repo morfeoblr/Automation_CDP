@@ -1,4 +1,16 @@
 1. Global repository is created on https://github.com, here is the link: https://github.com/morfeoblr/Automation_CDP.
 
 See "#2 - SSH keys creation.png" screen how SSH keys were created.
-See "#2,3 - Clone and First commit" screen how global repository was cloned, first commit executed.
+See "#2,3 - Clone and First commit.png" screen how global repository was cloned, first commit to Master.
+See "#3 - Second commit.png" screen of the second commit to Master.
+See "#3 - Third commit.png" screen of the third commit to Master.
+See "#4 - Dev branch creation and first commit there.png" of Dev branch creation and first commit there.
+See "#4 - Second dev commit.png" - second commit to Dev branch.
+See "#5 - Merge Dev into Master.png" - merge Dev branch into Master.
+See "#6 - Made new two commits to Dev" - shows just made commits to Dev.
+See "#6 - Made additional commit to Master" - shows just made commit to Master.
+See "#6 - Rebase Dev branch" - shows that Master commit is appeared on Dev after rebase action.
+See "#7 Made new two commits to Dev" - shows just made commits to Dev.
+See "#7 Cherry-pick before execution" - shows state before command execution.
+See "#7 Cherry-pick after execution" - shows state after command execution.
+See "#7 Revert last commit from Dev" - shows that last commit has been removed (with description "Added file toremove4").
