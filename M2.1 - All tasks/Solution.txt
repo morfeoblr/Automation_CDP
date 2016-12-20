@@ -1,0 +1,1 @@
+1. Global repository is created on https://github.com, here is the link: https://github.com/morfeoblr/Automation_CDP.
