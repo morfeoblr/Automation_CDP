@@ -1,0 +1,18 @@
+Job_Settings_1.png
+Shows that Jenkins is setup. Defasult port is changed to 8081.
+Additionally shows job configuration (Execute only on Slave, Use proper Git repository).
+
+Job_Settings_2.png
+Shows trigger settings (check SCM changes every 5 minutes, Build each midnight mon-fri, build sln solution using MSBuild)
+
+Node_settings.png
+Shown node settings.
+
+Node_view.png
+Node view, it's connected.
+
+Build result.png
+Screen of Build result.
+
+Build result - Console Output.txt
+File with full Build results.

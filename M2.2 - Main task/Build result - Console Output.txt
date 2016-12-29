@@ -1,0 +1,81 @@
+Started by user Aliaksei Bakhur
+╤юсшЁрхЄё  єфрыхээю эр MorfeO-PC (Win10 Edge) in workspace c:\Data\Slave\workspace\Hello CI Build
+Cloning the remote Git repository
+Cloning repository https://github.com/vitalliuss/helloci
+ > c:\Program Files\Git\cmd\git.exe init c:\Data\Slave\workspace\Hello CI Build # timeout=10
+Fetching upstream changes from https://github.com/vitalliuss/helloci
+ > c:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > c:\Program Files\Git\cmd\git.exe fetch --tags --progress https://github.com/vitalliuss/helloci +refs/heads/*:refs/remotes/origin/*
+ > c:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/vitalliuss/helloci # timeout=10
+ > c:\Program Files\Git\cmd\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > c:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/vitalliuss/helloci # timeout=10
+Fetching upstream changes from https://github.com/vitalliuss/helloci
+ > c:\Program Files\Git\cmd\git.exe fetch --tags --progress https://github.com/vitalliuss/helloci +refs/heads/*:refs/remotes/origin/*
+ > c:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > c:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 37b68612ef77f4cda7425a3fe008ee847bb29d51 (refs/remotes/origin/master)
+ > c:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > c:\Program Files\Git\cmd\git.exe checkout -f 37b68612ef77f4cda7425a3fe008ee847bb29d51
+ > c:\Program Files\Git\cmd\git.exe rev-list 37b68612ef77f4cda7425a3fe008ee847bb29d51 # timeout=10
+Path To MSBuild.exe: c:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe
+Executing the command cmd.exe /C " c:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe .NET/Calculator.sln " && exit %%ERRORLEVEL%% from c:\Data\Slave\workspace\Hello CI Build
+[Hello CI Build] $ cmd.exe /C " c:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe .NET/Calculator.sln " && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine версии 4.6.1586.0
+[Microsoft .NET Framework версии 4.0.30319.42000]
+(C) Корпор ция М йкрософт (Microsoft Corporation). Все пр в  з щищены.
+
+Построение проектов в этом решении по одному. Чтобы включить п р ллельное построение, доб вьте п р метр "/m".
+Построение н ч то 30.12.2016 0:26:27.
+Проект "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator.sln" в узле 1 (целевые объекты по умолч нию).
+ValidateSolutionConfiguration:
+  Созд ние конфигур ции решения "Debug|Mixed Platforms".
+Проект "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator.sln" (1) выполняет построение "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\Calculator.csproj" (2) в узле 1 (целевые объекты по умолч нию).
+PrepareForBuild:
+  Созд ние к т лог  "bin\Debug\".
+  Созд ние к т лог  "obj\x86\Debug\".
+ResolveAssemblyReferences:
+  Будет созд н список исключений профиля TargetFramework.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:AnyCPU /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva- /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\x86\Debug\Calculator.dll /target:library /utf8output Calc.cs Properties\AssemblyInfo.cs "C:\Users\Aliaksei\AppData\Local\Temp\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Копиров ние ф йл  из "obj\x86\Debug\Calculator.dll" в "bin\Debug\Calculator.dll".
+  Calculator -> c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\bin\Debug\Calculator.dll
+  Копиров ние ф йл  из "obj\x86\Debug\Calculator.pdb" в "bin\Debug\Calculator.pdb".
+Построение проект  "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\Calculator.csproj" з вершено (целевые объекты по умолч нию).
+Проект "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator.sln" (1) выполняет построение "c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj.metaproj" (3) в узле 1 (целевые объекты по умолч нию).
+Проект "c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj.metaproj" (3) выполняет построение "c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj" (4) в узле 1 (целевые объекты по умолч нию).
+PrepareForBuild:
+  Созд ние к т лог  "bin\Debug\".
+  Созд ние к т лог  "obj\Debug\".
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva- /reference:"c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\bin\Debug\Calculator.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\Lib\nunit.framework.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\CalculatorTest.dll /target:library /utf8output Properties\AssemblyInfo.cs TestCalculator.cs "C:\Users\Aliaksei\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+TestCalculator.cs(77,34): warning CS0618: "System.Configuration.ConfigurationSettings.AppSettings" является уст ревшим: "This method is obsolete, it has been replaced by System.Configuration!System.Configuration.ConfigurationManager.AppSettings" [c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj]
+TestCalculator.cs(79,30): warning CS0618: "System.Configuration.ConfigurationSettings.AppSettings" является уст ревшим: "This method is obsolete, it has been replaced by System.Configuration!System.Configuration.ConfigurationManager.AppSettings" [c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj]
+_CopyFilesMarkedCopyLocal:
+  Копиров ние ф йл  из "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\bin\Debug\Calculator.dll" в "bin\Debug\Calculator.dll".
+  Копиров ние ф йл  из "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\Lib\nunit.framework.dll" в "bin\Debug\nunit.framework.dll".
+  Копиров ние ф йл  из "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator\bin\Debug\Calculator.pdb" в "bin\Debug\Calculator.pdb".
+_CopyAppConfigFile:
+  Копиров ние ф йл  из "App.config" в "bin\Debug\CalculatorTest.dll.config".
+CopyFilesToOutputDirectory:
+  Копиров ние ф йл  из "obj\Debug\CalculatorTest.dll" в "bin\Debug\CalculatorTest.dll".
+  CalculatorTest -> c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\bin\Debug\CalculatorTest.dll
+  Копиров ние ф йл  из "obj\Debug\CalculatorTest.pdb" в "bin\Debug\CalculatorTest.pdb".
+Построение проект  "c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj" з вершено (целевые объекты по умолч нию).
+Построение проект  "c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj.metaproj" з вершено (целевые объекты по умолч нию).
+Построение проект  "c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator.sln" з вершено (целевые объекты по умолч нию).
+
+Построение успешно з вершено.
+
+"c:\Data\Slave\workspace\Hello CI Build\.NET\Calculator.sln" (целевой объект по умолч нию) (1) ->
+"c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj.metaproj" (целевой объект по умолч нию) (3) ->
+"c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj" (целевой объект по умолч нию) (4) ->
+(Целевой объект CoreCompile) -> 
+  TestCalculator.cs(77,34): warning CS0618: "System.Configuration.ConfigurationSettings.AppSettings" является уст ревшим: "This method is obsolete, it has been replaced by System.Configuration!System.Configuration.ConfigurationManager.AppSettings" [c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj]
+  TestCalculator.cs(79,30): warning CS0618: "System.Configuration.ConfigurationSettings.AppSettings" является уст ревшим: "This method is obsolete, it has been replaced by System.Configuration!System.Configuration.ConfigurationManager.AppSettings" [c:\Data\Slave\workspace\Hello CI Build\.NET\CalculatorTest\CalculatorTest.csproj]
+
+    Предупреждений: 2
+    Ошибок: 0
+
+З тр ченное время: 00:00:03.21
+Finished: SUCCESS
