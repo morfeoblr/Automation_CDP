@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="61" result="Failed" total="61" passed="51" failed="10" inconclusive="0" skipped="0" asserts="56" engine-version="3.6.0.0" clr-version="4.0.30319.42000" start-time="2017-01-28 10:25:35Z" end-time="2017-01-28 10:25:37Z" duration="1.984903">
+  <command-line><![CDATA[nunit3-console.exe  "c:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\NUnitTests.dll"]]></command-line>
+  <test-suite type="Assembly" id="0-1089" name="NUnitTests.dll" fullname="c:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\NUnitTests.dll" runstate="Runnable" testcasecount="61" result="Failed" site="Child" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:37Z" duration="0.588222" total="61" passed="51" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="56">
+    <environment framework-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="c:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\packages\NUnit.ConsoleRunner.3.6.0\tools" machine-name="MORFEO-PC" user="Aliaksei" user-domain="MORFEO-PC" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="c:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\packages\NUnit.ConsoleRunner.3.6.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="1660" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="SetUpFixture" id="0-1060" name="NUnitTests" fullname="NUnitTests.BaseTest" classname="NUnitTests.BaseTest" runstate="Runnable" testcasecount="61" result="Failed" site="Child" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:37Z" duration="0.552154" total="61" passed="51" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="56">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Base Init
+Base Cleanup
+]]></output>
+      <test-suite type="TestFixture" id="0-1000" name="AbsOperation" fullname="NUnitTests.AbsOperation" classname="NUnitTests.AbsOperation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.086272" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-suite type="ParameterizedMethod" id="0-1006" name="NUnit_AbsOperation_Negative_Test_Null" fullname="NUnitTests.AbsOperation.NUnit_AbsOperation_Negative_Test_Null" classname="NUnitTests.AbsOperation" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.044180" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1005" name="NUnit_AbsOperation_Negative_Test_Null(null,0)" fullname="NUnitTests.AbsOperation.NUnit_AbsOperation_Negative_Test_Null(null,0)" methodname="NUnit_AbsOperation_Negative_Test_Null" classname="NUnitTests.AbsOperation" runstate="Runnable" seed="1179536007" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.028970" asserts="1" />
+        </test-suite>
+        <test-case id="0-1007" name="NUnit_AbsOperation_Negative_Test_String" fullname="NUnitTests.AbsOperation.NUnit_AbsOperation_Negative_Test_String" methodname="NUnit_AbsOperation_Negative_Test_String" classname="NUnitTests.AbsOperation" runstate="Runnable" seed="876749124" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.014189" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1004" name="NUnit_AbsOperation_Positive1" fullname="NUnitTests.AbsOperation.NUnit_AbsOperation_Positive1" classname="NUnitTests.AbsOperation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.013005" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="0-1001" name="NUnit_AbsOperation_Positive1(4,4)" fullname="NUnitTests.AbsOperation.NUnit_AbsOperation_Positive1(4,4)" methodname="NUnit_AbsOperation_Positive1" classname="NUnitTests.AbsOperation" runstate="Runnable" seed="5517052" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000432" asserts="1" />
+          <test-case id="0-1002" name="NUnit_AbsOperation_Positive1(-2,2)" fullname="NUnitTests.AbsOperation.NUnit_AbsOperation_Positive1(-2,2)" methodname="NUnit_AbsOperation_Positive1" classname="NUnitTests.AbsOperation" runstate="Runnable" seed="887359407" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000252" asserts="1" />
+          <test-case id="0-1003" name="NUnit_AbsOperation_Positive1(0,0)" fullname="NUnitTests.AbsOperation.NUnit_AbsOperation_Positive1(0,0)" methodname="NUnit_AbsOperation_Positive1" classname="NUnitTests.AbsOperation" runstate="Runnable" seed="975187925" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000094" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1082" name="AddOperation" fullname="NUnitTests.AddOperation" classname="NUnitTests.AddOperation" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.124044" total="5" passed="3" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1088" name="NUnit_AddOperation_Negative_Test_Null" fullname="NUnitTests.AddOperation.NUnit_AddOperation_Negative_Test_Null" methodname="NUnit_AddOperation_Negative_Test_Null" classname="NUnitTests.AddOperation" runstate="Runnable" seed="1534014304" result="Failed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.087947" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 11 but was 51. Strings differ at index 0.
+  Expected: "Wrong input"
+  But was:  "Ссылка на объект не указывает на экземпляр объекта."
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[в NUnitTests.AddOperation.NUnit_AddOperation_Negative_Test_Null() в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\AddOperation.cs:строка 56
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 11 but was 51. Strings differ at index 0.
+  Expected: "Wrong input"
+  But was:  "Ссылка на объект не указывает на экземпляр объекта."
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[в NUnitTests.AddOperation.NUnit_AddOperation_Negative_Test_Null() в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\AddOperation.cs:строка 51
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="0-1087" name="NUnit_AddOperation_Negative_Test_String" fullname="NUnitTests.AddOperation.NUnit_AddOperation_Negative_Test_String" methodname="NUnit_AddOperation_Negative_Test_String" classname="NUnitTests.AddOperation" runstate="Runnable" seed="109790985" result="Failed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.006329" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 11 but was 42. Strings differ at index 0.
+  Expected: "Wrong input"
+  But was:  "Заданное приведение является недопустимым."
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[в NUnitTests.AddOperation.NUnit_AddOperation_Negative_Test_String() в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\AddOperation.cs:строка 34
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 11 but was 42. Strings differ at index 0.
+  Expected: "Wrong input"
+  But was:  "Заданное приведение является недопустимым."
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[в NUnitTests.AddOperation.NUnit_AddOperation_Negative_Test_String() в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\AddOperation.cs:строка 29
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="0-1086" name="NUnit_AddOperation_Positive" fullname="NUnitTests.AddOperation.NUnit_AddOperation_Positive" classname="NUnitTests.AddOperation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.019058" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="0-1083" name="NUnit_AddOperation_Positive(1,-3,-2)" fullname="NUnitTests.AddOperation.NUnit_AddOperation_Positive(1,-3,-2)" methodname="NUnit_AddOperation_Positive" classname="NUnitTests.AddOperation" runstate="Runnable" seed="1681948383" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000396" asserts="1" />
+          <test-case id="0-1084" name="NUnit_AddOperation_Positive(1,1,2)" fullname="NUnitTests.AddOperation.NUnit_AddOperation_Positive(1,1,2)" methodname="NUnit_AddOperation_Positive" classname="NUnitTests.AddOperation" runstate="Runnable" seed="1536052665" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000060" asserts="1" />
+          <test-case id="0-1085" name="NUnit_AddOperation_Positive(-5,-3,-8)" fullname="NUnitTests.AddOperation.NUnit_AddOperation_Positive(-5,-3,-8)" methodname="NUnit_AddOperation_Positive" classname="NUnitTests.AddOperation" runstate="Runnable" seed="252427468" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000051" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1022" name="CosOperation" fullname="NUnitTests.CosOperation" classname="NUnitTests.CosOperation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.024527" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-suite type="ParameterizedMethod" id="0-1028" name="NUnit_CosOperation_Negative_Test_Null" fullname="NUnitTests.CosOperation.NUnit_CosOperation_Negative_Test_Null" classname="NUnitTests.CosOperation" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.003476" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1027" name="NUnit_CosOperation_Negative_Test_Null(null,1)" fullname="NUnitTests.CosOperation.NUnit_CosOperation_Negative_Test_Null(null,1)" methodname="NUnit_CosOperation_Negative_Test_Null" classname="NUnitTests.CosOperation" runstate="Runnable" seed="547047123" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000590" asserts="1" />
+        </test-suite>
+        <test-case id="0-1029" name="NUnit_CosOperation_Negative_Test_String" fullname="NUnitTests.CosOperation.NUnit_CosOperation_Negative_Test_String" methodname="NUnit_CosOperation_Negative_Test_String" classname="NUnitTests.CosOperation" runstate="Runnable" seed="413769063" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000698" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1025" name="NUnit_CosOperation_Positive" fullname="NUnitTests.CosOperation.NUnit_CosOperation_Positive" classname="NUnitTests.CosOperation" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.007014" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1023" name="NUnit_CosOperation_Positive(3.14159265358979d,-1)" fullname="NUnitTests.CosOperation.NUnit_CosOperation_Positive(3.14159265358979d,-1)" methodname="NUnit_CosOperation_Positive" classname="NUnitTests.CosOperation" runstate="Runnable" seed="1535002275" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000398" asserts="1" />
+          <test-case id="0-1024" name="NUnit_CosOperation_Positive(0,1)" fullname="NUnitTests.CosOperation.NUnit_CosOperation_Positive(0,1)" methodname="NUnit_CosOperation_Positive" classname="NUnitTests.CosOperation" runstate="Runnable" seed="1353720576" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000125" asserts="1" />
+        </test-suite>
+        <test-case id="0-1026" name="NUnit_CosOperation_Positive" fullname="NUnitTests.CosOperation.NUnit_CosOperation_Positive" methodname="NUnit_CosOperation_Positive" classname="NUnitTests.CosOperation" runstate="Runnable" seed="1656822947" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000413" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1061" name="DivideOperation" fullname="NUnitTests.DivideOperation" classname="NUnitTests.DivideOperation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.031884" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-suite type="ParameterizedMethod" id="0-1068" name="NUnit_DivideOperation_Negative_Divide_by_zero" fullname="NUnitTests.DivideOperation.NUnit_DivideOperation_Negative_Divide_by_zero" classname="NUnitTests.DivideOperation" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.004006" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1067" name="NUnit_DivideOperation_Negative_Divide_by_zero(10,0,double.PositiveInfinity)" fullname="NUnitTests.DivideOperation.NUnit_DivideOperation_Negative_Divide_by_zero(10,0,double.PositiveInfinity)" methodname="NUnit_DivideOperation_Negative_Divide_by_zero" classname="NUnitTests.DivideOperation" runstate="Runnable" seed="1535091771" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000387" asserts="1" />
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="0-1066" name="NUnit_DivideOperation_Positive" fullname="NUnitTests.DivideOperation.NUnit_DivideOperation_Positive" classname="NUnitTests.DivideOperation" runstate="Runnable" testcasecount="4" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.016014" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <test-case id="0-1062" name="NUnit_DivideOperation_Positive(6,-3,-2)" fullname="NUnitTests.DivideOperation.NUnit_DivideOperation_Positive(6,-3,-2)" methodname="NUnit_DivideOperation_Positive" classname="NUnitTests.DivideOperation" runstate="Runnable" seed="112051183" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000343" asserts="1" />
+          <test-case id="0-1063" name="NUnit_DivideOperation_Positive(8,4,2)" fullname="NUnitTests.DivideOperation.NUnit_DivideOperation_Positive(8,4,2)" methodname="NUnit_DivideOperation_Positive" classname="NUnitTests.DivideOperation" runstate="Runnable" seed="850761724" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000099" asserts="1" />
+          <test-case id="0-1064" name="NUnit_DivideOperation_Positive(0,-10,0)" fullname="NUnitTests.DivideOperation.NUnit_DivideOperation_Positive(0,-10,0)" methodname="NUnit_DivideOperation_Positive" classname="NUnitTests.DivideOperation" runstate="Runnable" seed="1722759648" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000087" asserts="1" />
+          <test-case id="0-1065" name="NUnit_DivideOperation_Positive(-50,-5,10)" fullname="NUnitTests.DivideOperation.NUnit_DivideOperation_Positive(-50,-5,10)" methodname="NUnit_DivideOperation_Positive" classname="NUnitTests.DivideOperation" runstate="Runnable" seed="1682407990" result="Passed" start-time="2017-01-28 10:25:36Z" end-time="2017-01-28 10:25:36Z" duration="0.000070" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1008" name="isNegativeOperation" fullname="NUnitTests.isNegativeOperation" classname="NUnitTests.isNegativeOperation" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.037012" total="5" passed="3" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1014" name="NUnit_isNegativeOperation_Negative_Test_String" fullname="NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Negative_Test_String" methodname="NUnit_isNegativeOperation_Negative_Test_String" classname="NUnitTests.isNegativeOperation" runstate="Runnable" seed="67753365" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000902" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1013" name="NUnit_isNegativeOperation_Positive" fullname="NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive" classname="NUnitTests.isNegativeOperation" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.029032" total="4" passed="2" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1009" name="NUnit_isNegativeOperation_Positive(1,False)" fullname="NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(1,False)" methodname="NUnit_isNegativeOperation_Positive" classname="NUnitTests.isNegativeOperation" runstate="Runnable" seed="1972740127" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.005954" asserts="1" />
+          <test-case id="0-1010" name="NUnit_isNegativeOperation_Positive(-1,True)" fullname="NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(-1,True)" methodname="NUnit_isNegativeOperation_Positive" classname="NUnitTests.isNegativeOperation" runstate="Runnable" seed="1188642045" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000140" asserts="1" />
+          <test-case id="0-1011" name="NUnit_isNegativeOperation_Positive(0,False)" fullname="NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(0,False)" methodname="NUnit_isNegativeOperation_Positive" classname="NUnitTests.isNegativeOperation" runstate="Runnable" seed="1366314811" result="Failed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.006141" asserts="1">
+            <failure>
+              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+              <stack-trace><![CDATA[в NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(Double a, Boolean expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\isNegativeOperation.cs:строка 21
+]]></stack-trace>
+            </failure>
+            <assertions>
+              <assertion result="Failed">
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[в NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(Double a, Boolean expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\isNegativeOperation.cs:строка 21
+]]></stack-trace>
+              </assertion>
+            </assertions>
+          </test-case>
+          <test-case id="0-1012" name="NUnit_isNegativeOperation_Positive(null,False)" fullname="NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(null,False)" methodname="NUnit_isNegativeOperation_Positive" classname="NUnitTests.isNegativeOperation" runstate="Runnable" seed="1779217559" result="Failed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001525" asserts="1">
+            <failure>
+              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+              <stack-trace><![CDATA[в NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(Double a, Boolean expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\isNegativeOperation.cs:строка 21
+]]></stack-trace>
+            </failure>
+            <assertions>
+              <assertion result="Failed">
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[в NUnitTests.isNegativeOperation.NUnit_isNegativeOperation_Positive(Double a, Boolean expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\isNegativeOperation.cs:строка 21
+]]></stack-trace>
+              </assertion>
+            </assertions>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1015" name="isPositiveOperation" fullname="NUnitTests.isPositiveOperation" classname="NUnitTests.isPositiveOperation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.024038" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-case id="0-1021" name="NUnit_isPositiveOperation_Negative_Test_String" fullname="NUnitTests.isPositiveOperation.NUnit_isPositiveOperation_Negative_Test_String" methodname="NUnit_isPositiveOperation_Negative_Test_String" classname="NUnitTests.isPositiveOperation" runstate="Runnable" seed="988143048" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001018" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1020" name="NUnit_isPositiveOperation_Positive" fullname="NUnitTests.isPositiveOperation.NUnit_isPositiveOperation_Positive" classname="NUnitTests.isPositiveOperation" runstate="Runnable" testcasecount="4" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.016030" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <test-case id="0-1016" name="NUnit_isPositiveOperation_Positive(1,True)" fullname="NUnitTests.isPositiveOperation.NUnit_isPositiveOperation_Positive(1,True)" methodname="NUnit_isPositiveOperation_Positive" classname="NUnitTests.isPositiveOperation" runstate="Runnable" seed="1642912325" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000487" asserts="1" />
+          <test-case id="0-1017" name="NUnit_isPositiveOperation_Positive(-1,False)" fullname="NUnitTests.isPositiveOperation.NUnit_isPositiveOperation_Positive(-1,False)" methodname="NUnit_isPositiveOperation_Positive" classname="NUnitTests.isPositiveOperation" runstate="Runnable" seed="307044448" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000075" asserts="1" />
+          <test-case id="0-1018" name="NUnit_isPositiveOperation_Positive(0,False)" fullname="NUnitTests.isPositiveOperation.NUnit_isPositiveOperation_Positive(0,False)" methodname="NUnit_isPositiveOperation_Positive" classname="NUnitTests.isPositiveOperation" runstate="Runnable" seed="1411421195" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000104" asserts="1" />
+          <test-case id="0-1019" name="NUnit_isPositiveOperation_Positive(null,False)" fullname="NUnitTests.isPositiveOperation.NUnit_isPositiveOperation_Positive(null,False)" methodname="NUnit_isPositiveOperation_Positive" classname="NUnitTests.isPositiveOperation" runstate="Runnable" seed="1453320876" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000091" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1075" name="MyltipleOperation" fullname="NUnitTests.MyltipleOperation" classname="NUnitTests.MyltipleOperation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.025015" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-case id="0-1080" name="NUnit_SubOperation_Negative_Test_Null" fullname="NUnitTests.MyltipleOperation.NUnit_SubOperation_Negative_Test_Null" methodname="NUnit_SubOperation_Negative_Test_Null" classname="NUnitTests.MyltipleOperation" runstate="Runnable" seed="1539767107" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000560" asserts="1" />
+        <test-case id="0-1081" name="NUnit_SubOperation_Negative_Test_String" fullname="NUnitTests.MyltipleOperation.NUnit_SubOperation_Negative_Test_String" methodname="NUnit_SubOperation_Negative_Test_String" classname="NUnitTests.MyltipleOperation" runstate="Runnable" seed="1299481053" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000672" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1079" name="NUnit_SubOperation_Positive" fullname="NUnitTests.MyltipleOperation.NUnit_SubOperation_Positive" classname="NUnitTests.MyltipleOperation" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.012027" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="0-1076" name="NUnit_SubOperation_Positive(1,-3,4)" fullname="NUnitTests.MyltipleOperation.NUnit_SubOperation_Positive(1,-3,4)" methodname="NUnit_SubOperation_Positive" classname="NUnitTests.MyltipleOperation" runstate="Runnable" seed="656615337" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000433" asserts="1" />
+          <test-case id="0-1077" name="NUnit_SubOperation_Positive(-1,-3,2)" fullname="NUnitTests.MyltipleOperation.NUnit_SubOperation_Positive(-1,-3,2)" methodname="NUnit_SubOperation_Positive" classname="NUnitTests.MyltipleOperation" runstate="Runnable" seed="23800102" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000071" asserts="1" />
+          <test-case id="0-1078" name="NUnit_SubOperation_Positive(3,1,2)" fullname="NUnitTests.MyltipleOperation.NUnit_SubOperation_Positive(3,1,2)" methodname="NUnit_SubOperation_Positive" classname="NUnitTests.MyltipleOperation" runstate="Runnable" seed="154345115" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000068" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1069" name="MyltiplyOperation" fullname="NUnitTests.MyltiplyOperation" classname="NUnitTests.MyltiplyOperation" runstate="Runnable" testcasecount="4" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.020010" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+        <test-suite type="ParameterizedMethod" id="0-1074" name="NUnit_MyltiplyOperation_Positive" fullname="NUnitTests.MyltiplyOperation.NUnit_MyltiplyOperation_Positive" classname="NUnitTests.MyltiplyOperation" runstate="Runnable" testcasecount="4" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.016009" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <test-case id="0-1070" name="NUnit_MyltiplyOperation_Positive(2,-3,-6)" fullname="NUnitTests.MyltiplyOperation.NUnit_MyltiplyOperation_Positive(2,-3,-6)" methodname="NUnit_MyltiplyOperation_Positive" classname="NUnitTests.MyltiplyOperation" runstate="Runnable" seed="1016212060" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000429" asserts="1" />
+          <test-case id="0-1071" name="NUnit_MyltiplyOperation_Positive(1,3,3)" fullname="NUnitTests.MyltiplyOperation.NUnit_MyltiplyOperation_Positive(1,3,3)" methodname="NUnit_MyltiplyOperation_Positive" classname="NUnitTests.MyltiplyOperation" runstate="Runnable" seed="229080325" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000080" asserts="1" />
+          <test-case id="0-1072" name="NUnit_MyltiplyOperation_Positive(10,0,0)" fullname="NUnitTests.MyltiplyOperation.NUnit_MyltiplyOperation_Positive(10,0,0)" methodname="NUnit_MyltiplyOperation_Positive" classname="NUnitTests.MyltiplyOperation" runstate="Runnable" seed="1979064987" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000067" asserts="1" />
+          <test-case id="0-1073" name="NUnit_MyltiplyOperation_Positive(-5,-4,20)" fullname="NUnitTests.MyltiplyOperation.NUnit_MyltiplyOperation_Positive(-5,-4,20)" methodname="NUnit_MyltiplyOperation_Positive" classname="NUnitTests.MyltiplyOperation" runstate="Runnable" seed="1318293817" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000087" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1038" name="PowOperation" fullname="NUnitTests.PowOperation" classname="NUnitTests.PowOperation" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.074030" total="12" passed="7" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="7">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1052" name="NUnit_PowOperation_Negative_Test_Null" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Negative_Test_Null" methodname="NUnit_PowOperation_Negative_Test_Null" classname="NUnitTests.PowOperation" runstate="Runnable" seed="1301464396" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001115" asserts="1" />
+        <test-case id="0-1051" name="NUnit_PowOperation_Negative_Test_String" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Negative_Test_String" methodname="NUnit_PowOperation_Negative_Test_String" classname="NUnitTests.PowOperation" runstate="Runnable" seed="1626248771" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000710" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1044" name="NUnit_PowOperation_Positive1" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive1" classname="NUnitTests.PowOperation" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.033071" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1039" name="NUnit_PowOperation_Positive1(4,-2,0.0625d)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive1(4,-2,0.0625d)" methodname="NUnit_PowOperation_Positive1" classname="NUnitTests.PowOperation" runstate="Runnable" seed="1602747836" result="Failed" label="Error" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.009774" asserts="0">
+            <failure>
+              <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
+              <stack-trace><![CDATA[   в CSharpCalculator.Calculator.Pow(Object a, Object b)
+   в NUnitTests.PowOperation.NUnit_PowOperation_Positive1(Double a, Double b, Double expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\PowOperation.cs:строка 22]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1040" name="NUnit_PowOperation_Positive1(2,5,32)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive1(2,5,32)" methodname="NUnit_PowOperation_Positive1" classname="NUnitTests.PowOperation" runstate="Runnable" seed="612506266" result="Failed" label="Error" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001316" asserts="0">
+            <failure>
+              <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
+              <stack-trace><![CDATA[   в CSharpCalculator.Calculator.Pow(Object a, Object b)
+   в NUnitTests.PowOperation.NUnit_PowOperation_Positive1(Double a, Double b, Double expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\PowOperation.cs:строка 22]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1041" name="NUnit_PowOperation_Positive1(-5,3,-125)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive1(-5,3,-125)" methodname="NUnit_PowOperation_Positive1" classname="NUnitTests.PowOperation" runstate="Runnable" seed="1340131559" result="Failed" label="Error" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001144" asserts="0">
+            <failure>
+              <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
+              <stack-trace><![CDATA[   в CSharpCalculator.Calculator.Pow(Object a, Object b)
+   в NUnitTests.PowOperation.NUnit_PowOperation_Positive1(Double a, Double b, Double expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\PowOperation.cs:строка 22]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1042" name="NUnit_PowOperation_Positive1(123,0,1)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive1(123,0,1)" methodname="NUnit_PowOperation_Positive1" classname="NUnitTests.PowOperation" runstate="Runnable" seed="858353739" result="Failed" label="Error" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001187" asserts="0">
+            <failure>
+              <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
+              <stack-trace><![CDATA[   в CSharpCalculator.Calculator.Pow(Object a, Object b)
+   в NUnitTests.PowOperation.NUnit_PowOperation_Positive1(Double a, Double b, Double expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\PowOperation.cs:строка 22]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1043" name="NUnit_PowOperation_Positive1(0,88,0)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive1(0,88,0)" methodname="NUnit_PowOperation_Positive1" classname="NUnitTests.PowOperation" runstate="Runnable" seed="938677564" result="Failed" label="Error" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001489" asserts="0">
+            <failure>
+              <message><![CDATA[System.NotFiniteNumberException : Wrong input]]></message>
+              <stack-trace><![CDATA[   в CSharpCalculator.Calculator.Pow(Object a, Object b)
+   в NUnitTests.PowOperation.NUnit_PowOperation_Positive1(Double a, Double b, Double expected_Result) в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\PowOperation.cs:строка 22]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="0-1050" name="NUnit_PowOperation_Positive2" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive2" classname="NUnitTests.PowOperation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.023067" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+          <test-case id="0-1045" name="NUnit_PowOperation_Positive2(4,-2,0.0625d)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive2(4,-2,0.0625d)" methodname="NUnit_PowOperation_Positive2" classname="NUnitTests.PowOperation" runstate="Runnable" seed="319591590" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.001362" asserts="1" />
+          <test-case id="0-1046" name="NUnit_PowOperation_Positive2(2,5,32)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive2(2,5,32)" methodname="NUnit_PowOperation_Positive2" classname="NUnitTests.PowOperation" runstate="Runnable" seed="31131450" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000179" asserts="1" />
+          <test-case id="0-1047" name="NUnit_PowOperation_Positive2(-5,3,-125)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive2(-5,3,-125)" methodname="NUnit_PowOperation_Positive2" classname="NUnitTests.PowOperation" runstate="Runnable" seed="1097906763" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000104" asserts="1" />
+          <test-case id="0-1048" name="NUnit_PowOperation_Positive2(123,0,1)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive2(123,0,1)" methodname="NUnit_PowOperation_Positive2" classname="NUnitTests.PowOperation" runstate="Runnable" seed="1269087410" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000073" asserts="1" />
+          <test-case id="0-1049" name="NUnit_PowOperation_Positive2(0,88,0)" fullname="NUnitTests.PowOperation.NUnit_PowOperation_Positive2(0,88,0)" methodname="NUnit_PowOperation_Positive2" classname="NUnitTests.PowOperation" runstate="Runnable" seed="293735809" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000068" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1030" name="SinOperation" fullname="NUnitTests.SinOperation" classname="NUnitTests.SinOperation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.029019" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-suite type="ParameterizedMethod" id="0-1036" name="NUnit_SinOperation_Negative_Test_Null" fullname="NUnitTests.SinOperation.NUnit_SinOperation_Negative_Test_Null" classname="NUnitTests.SinOperation" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.004016" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1035" name="NUnit_SinOperation_Negative_Test_Null(null,0)" fullname="NUnitTests.SinOperation.NUnit_SinOperation_Negative_Test_Null(null,0)" methodname="NUnit_SinOperation_Negative_Test_Null" classname="NUnitTests.SinOperation" runstate="Runnable" seed="1628710997" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000584" asserts="1" />
+        </test-suite>
+        <test-case id="0-1037" name="NUnit_SinOperation_Negative_Test_String" fullname="NUnitTests.SinOperation.NUnit_SinOperation_Negative_Test_String" methodname="NUnit_SinOperation_Negative_Test_String" classname="NUnitTests.SinOperation" runstate="Runnable" seed="1859883902" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000673" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1033" name="NUnit_SinOperation_Positive" fullname="NUnitTests.SinOperation.NUnit_SinOperation_Positive" classname="NUnitTests.SinOperation" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.008028" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1031" name="NUnit_SinOperation_Positive(1.5707963267949d,1)" fullname="NUnitTests.SinOperation.NUnit_SinOperation_Positive(1.5707963267949d,1)" methodname="NUnit_SinOperation_Positive" classname="NUnitTests.SinOperation" runstate="Runnable" seed="744760659" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000407" asserts="1" />
+          <test-case id="0-1032" name="NUnit_SinOperation_Positive(0,0)" fullname="NUnitTests.SinOperation.NUnit_SinOperation_Positive(0,0)" methodname="NUnit_SinOperation_Positive" classname="NUnitTests.SinOperation" runstate="Runnable" seed="1073402988" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000074" asserts="1" />
+        </test-suite>
+        <test-case id="0-1034" name="NUnit_SinOperation_Positive" fullname="NUnitTests.SinOperation.NUnit_SinOperation_Positive" methodname="NUnit_SinOperation_Positive" classname="NUnitTests.SinOperation" runstate="Runnable" seed="2047907786" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000478" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1053" name="SqrtOperation" fullname="NUnitTests.SqrtOperation" classname="NUnitTests.SqrtOperation" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.024023" total="5" passed="4" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1057" name="NUnit_SqrtOperation_Negative_Test_Null" fullname="NUnitTests.SqrtOperation.NUnit_SqrtOperation_Negative_Test_Null" methodname="NUnit_SqrtOperation_Negative_Test_Null" classname="NUnitTests.SqrtOperation" runstate="Runnable" seed="1016113445" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000445" asserts="1" />
+        <test-case id="0-1059" name="NUnit_SqrtOperation_Negative_Test_String" fullname="NUnitTests.SqrtOperation.NUnit_SqrtOperation_Negative_Test_String" methodname="NUnit_SqrtOperation_Negative_Test_String" classname="NUnitTests.SqrtOperation" runstate="Runnable" seed="85074409" result="Failed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.002270" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 11 but was 37. Strings differ at index 0.
+  Expected: "Wrong input"
+  But was:  "Входная строка имела неверный формат."
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[в NUnitTests.SqrtOperation.NUnit_SqrtOperation_Negative_Test_String() в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\SqrtOperation.cs:строка 47
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 11 but was 37. Strings differ at index 0.
+  Expected: "Wrong input"
+  But was:  "Входная строка имела неверный формат."
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[в NUnitTests.SqrtOperation.NUnit_SqrtOperation_Negative_Test_String() в C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\SqrtOperation.cs:строка 42
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="0-1058" name="NUnit_SqrtOpertaion_Negative_Test_Minus_Value" fullname="NUnitTests.SqrtOperation.NUnit_SqrtOpertaion_Negative_Test_Minus_Value" methodname="NUnit_SqrtOpertaion_Negative_Test_Minus_Value" classname="NUnitTests.SqrtOperation" runstate="Runnable" seed="881620419" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000462" asserts="1" />
+        <test-suite type="ParameterizedMethod" id="0-1056" name="NUnit_SqrtOpertaion_Positive" fullname="NUnitTests.SqrtOperation.NUnit_SqrtOpertaion_Positive" classname="NUnitTests.SqrtOperation" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.008519" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1054" name="NUnit_SqrtOpertaion_Positive(16,4)" fullname="NUnitTests.SqrtOperation.NUnit_SqrtOpertaion_Positive(16,4)" methodname="NUnit_SqrtOpertaion_Positive" classname="NUnitTests.SqrtOperation" runstate="Runnable" seed="1622576275" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000436" asserts="1" />
+          <test-case id="0-1055" name="NUnit_SqrtOpertaion_Positive(0,0)" fullname="NUnitTests.SqrtOperation.NUnit_SqrtOpertaion_Positive(0,0)" methodname="NUnit_SqrtOpertaion_Positive" classname="NUnitTests.SqrtOperation" runstate="Runnable" seed="995311621" result="Passed" start-time="2017-01-28 10:25:37Z" end-time="2017-01-28 10:25:37Z" duration="0.000091" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

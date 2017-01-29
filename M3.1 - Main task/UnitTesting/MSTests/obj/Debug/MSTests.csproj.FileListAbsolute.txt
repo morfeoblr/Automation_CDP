@@ -1,0 +1,22 @@
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\bin\Debug\MSTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\bin\Debug\MSTests.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\bin\Debug\Calculator1.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\obj\Debug\MSTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\obj\Debug\MSTests.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\obj\Debug\MSTests.csprojResolveAssemblyReference.cache
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\bin\Debug\MSTests.dll.CodeAnalysisLog.xml
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\MSTests\bin\Debug\MSTests.dll.lastcodeanalysissucceeded
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\MSTests\bin\Debug\MSTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\MSTests\bin\Debug\MSTests.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\MSTests\bin\Debug\Calculator1.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\MSTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\MSTests\obj\Debug\MSTests.csprojResolveAssemblyReference.cache
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\MSTests\obj\Debug\MSTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\MSTests\obj\Debug\MSTests.pdb
+G:\EPAM\AutomationCDP\Projects\UnitTesting\MSTests\bin\Debug\MSTests.dll
+G:\EPAM\AutomationCDP\Projects\UnitTesting\MSTests\bin\Debug\MSTests.pdb
+G:\EPAM\AutomationCDP\Projects\UnitTesting\MSTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\EPAM\AutomationCDP\Projects\UnitTesting\MSTests\obj\Debug\MSTests.csprojResolveAssemblyReference.cache
+G:\EPAM\AutomationCDP\Projects\UnitTesting\MSTests\obj\Debug\MSTests.dll
+G:\EPAM\AutomationCDP\Projects\UnitTesting\MSTests\obj\Debug\MSTests.pdb

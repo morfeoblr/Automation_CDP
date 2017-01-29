@@ -1,0 +1,9 @@
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\UnitTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\UnitTests.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\Calculator1.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\nunit.framework.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\nunitlite.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\nunit.framework.xml
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\UnitTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\UnitTests.pdb

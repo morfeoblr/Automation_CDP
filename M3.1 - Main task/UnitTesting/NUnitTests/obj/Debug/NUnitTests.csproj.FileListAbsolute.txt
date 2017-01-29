@@ -1,0 +1,28 @@
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\NUnitTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\NUnitTests.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\Calculator1.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\nunit.framework.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\nunitlite.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\nunit.framework.xml
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\NUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\NUnitTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\NUnitTests.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\NUnitTests.dll.CodeAnalysisLog.xml
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\NUnitTests.dll.lastcodeanalysissucceeded
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\NUnitTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\NUnitTests.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\Calculator1.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\nunit.framework.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\nunitlite.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\bin\Debug\nunit.framework.xml
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\obj\Debug\NUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\obj\Debug\NUnitTests.dll
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\UnitTesting\NUnitTests\obj\Debug\NUnitTests.pdb
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\bin\Debug\NUnitTests.dll
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\bin\Debug\NUnitTests.pdb
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\bin\Debug\nunit.framework.dll
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\bin\Debug\nunitlite.dll
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\bin\Debug\nunit.framework.xml
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\obj\Debug\NUnitTests.csprojResolveAssemblyReference.cache
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\obj\Debug\NUnitTests.dll
+G:\EPAM\AutomationCDP\Projects\UnitTesting\NUnitTests\obj\Debug\NUnitTests.pdb
