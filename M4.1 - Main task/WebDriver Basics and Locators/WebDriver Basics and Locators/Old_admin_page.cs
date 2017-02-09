@@ -9,7 +9,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class OldAdminPage
+    public class OldAdminPage: BaseTest
     {
         private static string _division = "//*[@id='ctl00_ctl00_cell3row2']/a";
         private static string _vendorUsers = "//a[@class='Level2NavigationNotSelectedText'][1]";

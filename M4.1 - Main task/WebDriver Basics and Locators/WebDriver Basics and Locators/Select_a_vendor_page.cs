@@ -9,7 +9,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class SelectAVendorPage
+    public class SelectAVendorPage: BaseTest
     {
         private static string _okButton = "//*[@id='btnOK']";
         public static void SelectTargetVendor(IWebDriver driver, string target)

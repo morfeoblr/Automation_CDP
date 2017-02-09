@@ -9,7 +9,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class StartPage
+    public class StartPage: BaseTest
     {
         private static string _companyId = "//*[@id='txtCompanyID']";
         private static string _userId = "//*[@id='txtUserID']";

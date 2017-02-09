@@ -83,6 +83,7 @@
     <Compile Include="Old_admin_page.cs" />
     <Compile Include="Select_a_vendor_page.cs" />
     <Compile Include="Home_page.cs" />
+    <Compile Include="BaseTest.cs" />
     <Compile Include="Start_page.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -11,11 +11,12 @@ namespace WebDriver_Basics_and_Locators
 {
     public class HomePage: BaseTest
     {
-        //private static string searchMenu = "//a[@href='/msc/Search']";
+        private static string searchMenu = "//a[@href='/msc/Search']";
         public static void Navigate_to_Search_page(IWebDriver driver)
         {
-            //driver.FindElement(By.XPath(searchMenu)).Click();
-            driver.Navigate().GoToUrl(Resource.Env_Url + "msc/Search");
+            WaitForElementVisibilityXPath(driver, searchMenu);
+            driver.FindElement(By.XPath(searchMenu)).Click();
+            //driver.Navigate().GoToUrl(Resource.Env_Url + "msc/Search");
         }
     }
 }

@@ -16,22 +16,22 @@ namespace WebDriver_Basics_and_Locators
         private static string searchSpinner = "//*[@class='results-loading-ball']";
         private static string searchResultsTotal = "//span[@id='searchResultsTotalFound']";
         private static string actionButtonForTactic = "//div[@class='tacticAction tactic-action-btn'][1]";
-        public static void DoSearch(IWebDriver driver, TimeSpan timeOut, string keywordSearch)
+        public static void DoSearch(IWebDriver driver, string keywordSearch)
         {
-            WaitForElementInvisibility(driver, timeOut, searchSpinner);
+            WaitForElementInvisibility(driver, searchSpinner);
             driver.FindElement(By.XPath(searchField)).SendKeys(keywordSearch);
             driver.FindElement(By.XPath(searchButton)).Click();
         }
 
-        public static string SearchTotalFound(IWebDriver driver, TimeSpan timeOut)
+        public static string SearchTotalFound(IWebDriver driver)
         {
-            WaitForElementInvisibility(driver, timeOut, searchSpinner);
+            WaitForElementInvisibility(driver, searchSpinner);
             return driver.FindElement(By.XPath(searchResultsTotal)).Text;
         }
 
-        public static void ClickOnFirstReturnedItem(IWebDriver driver, TimeSpan timeOut)
+        public static void ClickOnFirstReturnedItem(IWebDriver driver)
         {
-            WaitForElementInvisibility(driver, timeOut, searchSpinner);
+            WaitForElementInvisibility(driver, searchSpinner);
             driver.FindElement(By.XPath(actionButtonForTactic)).Click();
         }
     }

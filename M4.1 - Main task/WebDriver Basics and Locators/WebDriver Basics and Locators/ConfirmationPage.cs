@@ -13,9 +13,10 @@ namespace WebDriver_Basics_and_Locators
     public class ConfirmationPage: BaseTest
     {
         private static string groupName = "//a[contains(@onclick,'ShowAuthGroup')]";
-        public static string GetGroupName(IWebDriver driver, TimeSpan timeOut)
+        public static string GetGroupName(IWebDriver driver)
         {
-           return driver.FindElement(By.XPath(groupName)).Text;
+            WaitForElementVisibilityXPath(driver, groupName);
+            return driver.FindElement(By.XPath(groupName)).Text;
         }
     }
 }
