@@ -18,23 +18,23 @@ namespace WebDriver_Basics_and_Locators
         public string title { get; set; }
 
         [OneTimeSetUp]
-        public void OneceInit()
+        public void OnceInit()
         {
             timeOut = new TimeSpan(0, 0, 120);
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
             driver.Manage().Timeouts().SetPageLoadTimeout(timeOut);
         }
 
         [OneTimeTearDown]
-        public void OneceCleanUp()
+        public void OnceCleanUp()
         {
             driver.Close();
             driver.Dispose();
         }
 
-        public static void WaitForElementInvisibility(IWebDriver driver, IWebElement element)
+        public static void WaitForElementInvisibility(IWebElement element)
         {
             var wait = new WebDriverWait(driver, timeOut);
             wait.Until(drv =>
@@ -45,44 +45,12 @@ namespace WebDriver_Basics_and_Locators
                 }
                 catch
                 {
-                    return false;
-                }
-            } );
-        }
-
-        public static void WaitForElementVisibilityCSS(IWebDriver driver, IWebElement element)
-        {
-            var wait = new WebDriverWait(driver, timeOut);
-            wait.Until(drv =>
-            {
-                try
-                {
-                    return element.Displayed == true;
-                }
-                catch
-                {
-                    return false;
+                    return true;
                 }
             });
         }
 
-        public static void WaitForElementVisibilityXPath(IWebDriver driver, IWebElement element)
-        {
-            var wait = new WebDriverWait(driver, timeOut);
-            wait.Until(drv =>
-            {
-                try
-                {
-                    return element.Displayed == true;
-                }
-                catch
-                {
-                    return false;
-                }
-            });
-        }
-
-        public static void WaitForElementToBeClickable(IWebDriver driver, IWebElement element)
+        public static void WaitForElementVisibility(IWebElement element)
         {
             var wait = new WebDriverWait(driver, timeOut);
             wait.Until(drv =>

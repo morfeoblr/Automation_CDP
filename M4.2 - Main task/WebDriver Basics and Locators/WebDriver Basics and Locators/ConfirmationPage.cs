@@ -14,20 +14,24 @@ namespace WebDriver_Basics_and_Locators
     public class ConfirmationPage: BasePage
     {
         private const string GroupName = "//a[contains(@onclick,'ShowAuthGroup')]";
-        private IWebDriver driver;
 
-        [FindsBy(How = How.XPath, Using = GroupName)] private IWebElement groupName;
+        [FindsBy(How = How.XPath, Using = GroupName)]
+        private IWebElement groupName;
 
         public ConfirmationPage(IWebDriver driver)
         {
-            this.driver = driver;
-            this.title = "Confirmation";
+            this.title = "AdBuilder: Checkout";
+            PageFactory.InitElements(driver, this);
         }
 
-        public string GetGroupName(IWebDriver driver)
+        public string GetGroupName()
         {
-            WaitForElementVisibilityXPath(driver, groupName);
+            WaitForElementVisibility(groupName);
             return groupName.Text;
+        }
+        public string GetTitle()
+        {
+            return driver.Title;
         }
     }
 }

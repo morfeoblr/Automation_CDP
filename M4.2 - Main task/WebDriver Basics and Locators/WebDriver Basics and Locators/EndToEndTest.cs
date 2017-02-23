@@ -17,21 +17,22 @@ namespace WebDriver_Basics_and_Locators
         [Test]
         public void PlaceOrderWithLevel1Approvers()
         {
-            driver.Navigate().GoToUrl(Resource.Url);
-            StartPage.EnterCredentials(driver);
-            SelectAVendorPage.SelectTargetVendor(driver,Resource.Target_vendor);
-            OldAdminPage.LoginAsUser(driver);
-            driver.SwitchTo().Window(driver.WindowHandles.Last());
-            HomePage.Navigate_to_Search_page(driver);
-            SearchPage.DoSearch(driver, "parallel and nogif");
-            Assert.AreEqual("(1)", SearchPage.SearchTotalFound(driver),"Search has returned more then 1 item.");
-            SearchPage.ClickOnFirstReturnedItem(driver);
-            CustomizationPage.ClickNextButton(driver);
-            CustomizationPage.ClickFinishButton(driver);
-            CustomizationPage.ClickAcceptAndContinueButton(driver);
-            CustomizationPage.EnterCostToRunValue(driver, "1000");
-            CustomizationPage.ClickPlaceOrderButton(driver);
-            Assert.AreEqual("Level 1 Approvers", ConfirmationPage.GetGroupName(driver), "There is no Level 1 Approvers group shown on Confirmation page.");
+            StartPage startPage = new StartPage(driver);
+            startPage.OpenUrl();
+            SelectAVendorPage selectAVendorPage = startPage.EnterCredentials();
+            OldAdminPage oldAdminPage = selectAVendorPage.SelectTargetVendor();
+            HomePage homePage = oldAdminPage.LoginAsUser();
+            SearchPage searchPage = homePage.Navigate_to_Search_page();
+            searchPage.DoSearch("parallel and nogif");
+            Assert.AreEqual("(1)", searchPage.SearchTotalFound(),"Search has returned more then 1 item.");
+            CustomizationPage customizationPage = searchPage.ClickOnFirstReturnedItem();
+            customizationPage.ClickNextButton();
+            customizationPage.ClickFinishButton();
+            customizationPage.ClickAcceptAndContinueButton();
+            customizationPage.EnterCostToRunValue("1000");
+            ConfirmationPage confirmationPage = customizationPage.ClickPlaceOrderButton();
+            Assert.AreEqual("Level 1 Approvers", confirmationPage.GetGroupName(), "There is no Level 1 Approvers group shown on Confirmation page.");
+            Assert.AreEqual(confirmationPage.title, confirmationPage.GetTitle(), "Page title is {0} instead of {1}", confirmationPage.title, confirmationPage.title);
         }
     }
 }

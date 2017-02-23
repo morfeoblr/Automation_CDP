@@ -7,6 +7,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
 
 namespace WebDriver_Basics_and_Locators
 {
@@ -17,35 +18,43 @@ namespace WebDriver_Basics_and_Locators
         private const string SearchSpinner = "//*[@class='results-loading-ball']";
         private const string SearchResultsTotal = "//span[@id='searchResultsTotalFound']";
         private const string ActionButtonForTactic = "//div[@class='tacticAction tactic-action-btn'][1]";
-        private IWebDriver driver;
 
-        [FindsBy(How = How.XPath, Using = SearchField)] private IWebElement searchField;
-        [FindsBy(How = How.XPath, Using = SearchButton)] private IWebElement searchButton;
-        [FindsBy(How = How.XPath, Using = SearchSpinner)] private IWebElement searchSpinner;
-        [FindsBy(How = How.XPath, Using = SearchResultsTotal)] private IWebElement searchResultsTotal;
-        [FindsBy(How = How.XPath, Using = ActionButtonForTactic)] private IWebElement actionButtonForTactic;
+        [FindsBy(How = How.XPath, Using = SearchField)]
+        private IWebElement searchField;
+
+        [FindsBy(How = How.XPath, Using = SearchButton)]
+        private IWebElement searchButton;
+
+        [FindsBy(How = How.XPath, Using = SearchSpinner)]
+        private IWebElement searchSpinner;
+
+        [FindsBy(How = How.XPath, Using = SearchResultsTotal)]
+        private IWebElement searchResultsTotal;
+
+        [FindsBy(How = How.XPath, Using = ActionButtonForTactic)]
+        private IWebElement actionButtonForTactic;
 
         public SearchPage(IWebDriver driver)
         {
-            this.driver = driver;
+            PageFactory.InitElements(driver,this);
         }
 
         public void DoSearch(string keywordSearch)
         {
-            WaitForElementInvisibility(driver, searchSpinner);
+     //       WaitForElementInvisibility(driver, searchSpinner);
             searchField.SendKeys(keywordSearch);
             searchButton.Click();
         }
 
         public string SearchTotalFound()
         {
-            WaitForElementInvisibility(driver, searchSpinner);
+            WaitForElementInvisibility(searchSpinner);
             return searchResultsTotal.Text;
         }
 
         public CustomizationPage ClickOnFirstReturnedItem()
         {
-            WaitForElementInvisibility(driver, searchSpinner);
+    //        WaitForElementInvisibility(driver, searchSpinner);
             actionButtonForTactic.Click();
             return new CustomizationPage(driver);
         }

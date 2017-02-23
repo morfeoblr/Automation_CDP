@@ -19,44 +19,55 @@ namespace WebDriver_Basics_and_Locators
         private const string AcceptAndContineButton = "//img[contains(@src,'AcceptAndContinueButton')]";
         private const string CostToRunInput = "//*[@id='ExtraField_{91873EC0-28D2-4135-9001-6B51EADE6B8C}']";
         private const string PlaceOrderButton = "//div[@id='LowerButtons']//*[@id='placeOrder']";
-        private IWebDriver driver;
 
-        [FindsBy(How = How.XPath, Using = NextButton)] private IWebElement nextButton;
-        [FindsBy(How = How.XPath, Using = FinishButton)] private IWebElement finishButton;
-        [FindsBy(How = How.XPath, Using = InlinePreview)] private IWebElement inlinePreview;
-        [FindsBy(How = How.XPath, Using = AcceptAndContineButton)] private IWebElement acceptAndContineButton;
-        [FindsBy(How = How.XPath, Using = CostToRunInput)] private IWebElement costToRunInput;
-        [FindsBy(How = How.XPath, Using = PlaceOrderButton)] private IWebElement placeOrderButton;
+        [FindsBy(How = How.XPath, Using = NextButton)]
+        private IWebElement nextButton;
+
+        [FindsBy(How = How.XPath, Using = FinishButton)]
+        private IWebElement finishButton;
+
+        [FindsBy(How = How.CssSelector, Using = InlinePreview)]
+        private IWebElement inlinePreview;
+
+        [FindsBy(How = How.XPath, Using = AcceptAndContineButton)]
+        private IWebElement acceptAndContineButton;
+
+        [FindsBy(How = How.XPath, Using = CostToRunInput)]
+        private IWebElement costToRunInput;
+
+        [FindsBy(How = How.XPath, Using = PlaceOrderButton)]
+        private IWebElement placeOrderButton;
 
         public CustomizationPage(IWebDriver driver)
         {
-            this.driver = driver;
+            PageFactory.InitElements(driver, this);
         }
 
-        public void ClickNextButton(IWebDriver driver)
+        public void ClickNextButton()
         {
-            WaitForElementVisibilityCSS(driver, inlinePreview);
+            WaitForElementVisibility(inlinePreview);
             nextButton.Click();
         }
-        public void ClickFinishButton(IWebDriver driver)
+        public void ClickFinishButton()
         {
-            WaitForElementVisibilityCSS(driver, inlinePreview);
+            WaitForElementVisibility(inlinePreview);
             finishButton.Click();
         }
-        public void ClickAcceptAndContinueButton(IWebDriver driver)
+        public void ClickAcceptAndContinueButton()
         {
-            WaitForElementToBeClickable(driver, acceptAndContineButton);
+            WaitForElementVisibility(acceptAndContineButton);
             acceptAndContineButton.Click();
         }
-        public void EnterCostToRunValue(IWebDriver driver, string value)
+        public void EnterCostToRunValue(string value)
         {
-            WaitForElementVisibilityXPath(driver, costToRunInput);
+            WaitForElementVisibility(costToRunInput);
             costToRunInput.SendKeys(value);
         }
-        public void ClickPlaceOrderButton(IWebDriver driver)
+        public ConfirmationPage ClickPlaceOrderButton()
         {
-            WaitForElementVisibilityXPath(driver, placeOrderButton);
+            WaitForElementVisibility(placeOrderButton);
             placeOrderButton.Click();
+            return new ConfirmationPage(driver);
         }
     }
 }

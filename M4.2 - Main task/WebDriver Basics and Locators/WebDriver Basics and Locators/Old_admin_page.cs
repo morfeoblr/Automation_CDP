@@ -17,13 +17,26 @@ namespace WebDriver_Basics_and_Locators
         private const string AuthentificationIdInput = "//*[@id='ctl01_txtUserAccessID']";
         private const string SearchButton = "//*[@id='ctl01_btnSearch']";
         private const string LoginLink = "//a[contains(@onclick,'alexb')][1]";
-        private IWebDriver driver;
 
-        [FindsBy(How = How.XPath, Using = Division)] private IWebElement division;
-        [FindsBy(How = How.XPath, Using = VendorUsers)] private IWebElement vendorUsers;
-        [FindsBy(How = How.XPath, Using = AuthentificationIdInput)] private IWebElement authentificationIdInput;
-        [FindsBy(How = How.XPath, Using = SearchButton)] private IWebElement searchButton;
-        [FindsBy(How = How.XPath, Using = LoginLink)] private IWebElement loginLink;
+        [FindsBy(How = How.XPath, Using = Division)]
+        private IWebElement division;
+
+        [FindsBy(How = How.XPath, Using = VendorUsers)]
+        private IWebElement vendorUsers;
+
+        [FindsBy(How = How.XPath, Using = AuthentificationIdInput)]
+        private IWebElement authentificationIdInput;
+
+        [FindsBy(How = How.XPath, Using = SearchButton)]
+        private IWebElement searchButton;
+
+        [FindsBy(How = How.XPath, Using = LoginLink)]
+        private IWebElement loginLink;
+
+        public OldAdminPage(IWebDriver driver)
+        {
+            PageFactory.InitElements(driver, this);
+        }
 
         public HomePage LoginAsUser()
         {
@@ -32,6 +45,7 @@ namespace WebDriver_Basics_and_Locators
             authentificationIdInput.SendKeys(Resource.User_auth_id);
             searchButton.Click();
             loginLink.Click();
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
             return new HomePage(driver);
         }
     }
