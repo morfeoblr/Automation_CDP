@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 
 namespace WebDriver_Basics_and_Locators
@@ -21,7 +23,11 @@ namespace WebDriver_Basics_and_Locators
         public void OnceInit()
         {
             timeOut = new TimeSpan(0, 0, 120);
-            driver = new ChromeDriver();
+
+            DesiredCapabilities capability = DesiredCapabilities.Chrome();
+            //capability.SetCapability(CapabilityType.BrowserName, "Chrome");
+            //capability.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
+            driver = new RemoteWebDriver(new Uri("http://192.168.100.6:5556/wd/hub"), capability);
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
             driver.Manage().Timeouts().SetPageLoadTimeout(timeOut);
