@@ -7,6 +7,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
+using WebDriver_Basics_and_Locators.Utils;
 
 
 namespace WebDriver_Basics_and_Locators
@@ -37,18 +38,15 @@ namespace WebDriver_Basics_and_Locators
 
         public void OpenUrl()
         {
-            driver.Navigate().GoToUrl(Utils.Helper.ParseByKey("Url"));
-            // Resource.Url);
+            driver.Navigate().GoToUrl(Utils.ConfigurationHelper.GetEnvURL);
         }
 
         public SelectAVendorPage EnterCredentials()
         {
-            companyId.SendKeys(Utils.Helper.ParseByKey("CompanyID"));
-              //  Resource.Company_ID);
-            userId.SendKeys(Utils.Helper.ParseByKey("User_ID"));
-            //Resource.User_ID);
-            password.SendKeys(Utils.Helper.ParseByKey("Password"));
-            // Resource.Password);
+            GlobalUser globalUser = new GlobalUser();
+            companyId.SendKeys(globalUser.CompanyID);
+            userId.SendKeys(globalUser.UserID);
+            password.SendKeys(globalUser.Password);
             loginButton.Click();
             return new SelectAVendorPage(driver);
         }

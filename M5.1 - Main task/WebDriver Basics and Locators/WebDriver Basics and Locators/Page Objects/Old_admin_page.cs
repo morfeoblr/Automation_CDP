@@ -7,6 +7,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
+using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
@@ -42,7 +43,9 @@ namespace WebDriver_Basics_and_Locators
         {
             division.Click();
             vendorUsers.Click();
-            authentificationIdInput.SendKeys(Utils.Helper.ParseByKey("User_auth_id"));
+            PortalUser portaluser = new PortalUser();
+            authentificationIdInput.SendKeys(portaluser.AuthID);
+                //Utils.Helper.ParseByKey("User_auth_id"));
             //Resource.User_auth_id);
             searchButton.Click();
             loginLink.Click();

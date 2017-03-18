@@ -88,7 +88,9 @@
     <Compile Include="Page Objects\Start_page.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\Helper.cs" />
+    <Compile Include="Business objects\PortalUser.cs" />
+    <Compile Include="Business objects\GlobalUser.cs" />
+    <Compile Include="Utils\ConfigurationHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Business objects\App.config">
