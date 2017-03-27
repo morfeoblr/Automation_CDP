@@ -18,3 +18,4 @@ c:\users\aliaksei\documents\visual studio 2015\Projects\WebDriver Basics and Loc
 c:\users\aliaksei\documents\visual studio 2015\Projects\WebDriver Basics and Locators\WebDriver Basics and Locators\obj\Debug\WebDriver Basics and Locators.dll
 c:\users\aliaksei\documents\visual studio 2015\Projects\WebDriver Basics and Locators\WebDriver Basics and Locators\obj\Debug\WebDriver Basics and Locators.pdb
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\WebDriver Basics and Locators\WebDriver Basics and Locators\bin\Debug\WebDriver Basics and Locators.dll.config
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\WebDriver Basics and Locators\WebDriver Basics and Locators\obj\Debug\WebDriver Basics and Locators.csprojResolveAssemblyReference.cache

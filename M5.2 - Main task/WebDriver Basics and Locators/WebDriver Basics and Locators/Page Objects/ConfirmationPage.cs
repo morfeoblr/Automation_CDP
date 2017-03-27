@@ -8,21 +8,21 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
-using WebDriver_Basics_and_Locators.Page_Objects;
+using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class ConfirmationPage: PageDecorator
+    public class ConfirmationPage: BaseTest
     {
         private const string GroupName = "//a[contains(@onclick,'ShowAuthGroup')]";
 
         [FindsBy(How = How.XPath, Using = GroupName)]
         private IWebElement groupName;
 
-        public ConfirmationPage(InitialPage initialpage, IWebDriver driver) : base(initialpage.pagepath + " Confirmation page ->", initialpage)
+        public ConfirmationPage()
         {
             this.title = "AdBuilder: Checkout";
-            PageFactory.InitElements(driver, this);
+            PageFactory.InitElements(Driver.Instance, this);
         }
 
         public string GetGroupName()
@@ -32,7 +32,7 @@ namespace WebDriver_Basics_and_Locators
         }
         public string GetTitle()
         {
-            return driver.Title;
+            return Driver.Instance.Title;
         }
     }
 }

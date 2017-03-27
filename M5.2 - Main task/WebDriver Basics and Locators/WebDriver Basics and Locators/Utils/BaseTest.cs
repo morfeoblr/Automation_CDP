@@ -13,7 +13,7 @@ using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public abstract class BasePage
+    public abstract class BaseTest
     {
         public static TimeSpan timeOut;
         public static IWebDriver driver;
@@ -28,27 +28,23 @@ namespace WebDriver_Basics_and_Locators
             //capability.SetCapability(CapabilityType.BrowserName, "Chrome");
             //capability.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
             //driver = new RemoteWebDriver(new Uri("http://192.168.100.6:5556/wd/hub"), capability);
-            //  driver = new ChromeDriver();
 
-            BrowserCreator creator = new ChromeCreator();
-            Browser browser = creator.FactoryCreate();
-            driver = browser.InitBrowser();
-         //   driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
-            driver.Manage().Timeouts().SetPageLoadTimeout(timeOut);
+            Driver.Instance.Manage().Window.Maximize();
+            Driver.Instance.Manage().Window.Maximize();
+            Driver.Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
+            Driver.Instance.Manage().Timeouts().SetPageLoadTimeout(timeOut);
         }
 
         [OneTimeTearDown]
         public void OnceCleanUp()
         {
-            driver.Close();
-            driver.Dispose();
+            Driver.Instance.Close();
+            Driver.Instance.Dispose();
         }
 
         public static void WaitForElementInvisibility(IWebElement element)
         {
-            var wait = new WebDriverWait(driver, timeOut);
+            var wait = new WebDriverWait(Driver.Instance, timeOut);
             wait.Until(drv =>
             {
                 try
@@ -64,7 +60,7 @@ namespace WebDriver_Basics_and_Locators
 
         public static void WaitForElementVisibility(IWebElement element)
         {
-            var wait = new WebDriverWait(driver, timeOut);
+            var wait = new WebDriverWait(Driver.Instance, timeOut);
             wait.Until(drv =>
             {
                 try
@@ -84,7 +80,7 @@ namespace WebDriver_Basics_and_Locators
             {
                 for (int i = 0; i < 5; i++)
                 {
-                    IJavaScriptExecutor js = driver as IJavaScriptExecutor;
+                    IJavaScriptExecutor js = Driver.Instance as IJavaScriptExecutor;
                     js.ExecuteScript("arguments[0].setAttribute('style', arguments[1]);", element, "color: yellow; border: 2px solid yellow;");
                     js.ExecuteScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
                 }

@@ -7,11 +7,11 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
-using WebDriver_Basics_and_Locators.Page_Objects;
+using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class SelectAVendorPage: PageDecorator
+    public class SelectAVendorPage : BaseTest
     {
         private const string OkButton = "//*[@id='btnOK']";
         private const string Vendor = "//option[@value='e96dad0b-b6a4-4bb7-8c2d-90032d2a4b67']"; // vendor id
@@ -22,16 +22,16 @@ namespace WebDriver_Basics_and_Locators
         [FindsBy(How = How.XPath, Using = Vendor)]
         private IWebElement vendor;
 
-        public SelectAVendorPage(InitialPage initialpage, IWebDriver driver): base(initialpage.pagepath + " Select a vendor ->", initialpage)
+        public SelectAVendorPage()
         {
-            PageFactory.InitElements(driver, this);
+            PageFactory.InitElements(Driver.Instance, this);
         }
 
-        public OldAdminPage SelectTargetVendor(SelectAVendorPage selectAVendorPage)
+        public OldAdminPage SelectTargetVendor()
         {
             vendor.Click();
             okButton.Click();
-            return new OldAdminPage(selectAVendorPage, driver);
+            return new OldAdminPage();
         }
     }
 }

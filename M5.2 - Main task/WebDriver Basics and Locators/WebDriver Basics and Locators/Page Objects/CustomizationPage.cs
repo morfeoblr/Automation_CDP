@@ -8,11 +8,11 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
-using WebDriver_Basics_and_Locators.Page_Objects;
+using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class CustomizationPage: PageDecorator
+    public class CustomizationPage : BaseTest
     {
         private const string NextButton = "//*[@id='studio_navigation_button_next' and @value='Next ']";
         private const string FinishButton = "//*[@id='studio_navigation_button_next' and @value='Finish']";
@@ -39,9 +39,9 @@ namespace WebDriver_Basics_and_Locators
         [FindsBy(How = How.XPath, Using = PlaceOrderButton)]
         private IWebElement placeOrderButton;
 
-        public CustomizationPage(InitialPage initialpage, IWebDriver driver) : base(initialpage.pagepath + " Customization page ->", initialpage)
+        public CustomizationPage()
         {
-            PageFactory.InitElements(driver, this);
+            PageFactory.InitElements(Driver.Instance, this);
         }
 
         public void ClickNextButton()
@@ -64,11 +64,11 @@ namespace WebDriver_Basics_and_Locators
             WaitForElementVisibility(costToRunInput);
             costToRunInput.SendKeys(value);
         }
-        public ConfirmationPage ClickPlaceOrderButton(CustomizationPage customizationpage)
+        public ConfirmationPage ClickPlaceOrderButton()
         {
             WaitForElementVisibility(placeOrderButton);
             placeOrderButton.Click();
-            return new ConfirmationPage(customizationpage, driver);
+            return new ConfirmationPage();
         }
     }
 }

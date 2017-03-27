@@ -10,11 +10,11 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
-using WebDriver_Basics_and_Locators.Page_Objects;
+using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class SearchPage : PageDecorator
+    public class SearchPage : BaseTest
     {
         private const string SearchField = "//input[@id='searchterm']";
         private const string SearchButton = "//*[@id='searchbutton']";
@@ -57,10 +57,10 @@ namespace WebDriver_Basics_and_Locators
         [FindsBy(How = How.XPath, Using = SearchArea)]
         private IWebElement searchArea;
 
-        public SearchPage(InitialPage initialpage, IWebDriver driver) : base(initialpage.pagepath + " Search page ->", initialpage)
+        public SearchPage()
         {
             this.title = "Search";
-            PageFactory.InitElements(driver,this);
+            PageFactory.InitElements(Driver.Instance, this);
         }
 
         public void DoSearch(string keywordSearch)
@@ -76,16 +76,16 @@ namespace WebDriver_Basics_and_Locators
             return searchResultsTotal.Text;
         }
 
-        public CustomizationPage ClickOnFirstReturnedItem(SearchPage searchpage)
+        public CustomizationPage ClickOnFirstReturnedItem()
         {
     //        WaitForElementInvisibility(driver, searchSpinner);
             actionButtonForTactic.Click();
-            return new CustomizationPage(searchpage, driver);
+            return new CustomizationPage();
         }
 
         public void HoverOverAction()
         {
-            Actions hover = new Actions(driver);
+            Actions hover = new Actions(Driver.Instance);
             hover.MoveToElement(itemThumbnailCSS).Build().Perform();
             WaitForElementVisibility(hoverBubbleCustomizeButton);
             hover.Click(hoverBubbleCustomizeButton).Build().Perform();

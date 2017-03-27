@@ -77,8 +77,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page Objects\InitialPage.cs" />
-    <Compile Include="Page Objects\PageDecorator.cs" />
+    <Compile Include="Business objects\User.cs" />
     <Compile Include="Tests\EndToEndTest.cs" />
     <Compile Include="Page Objects\CustomizationPage.cs" />
     <Compile Include="Page Objects\ConfirmationPage.cs" />
@@ -86,15 +85,15 @@
     <Compile Include="Page Objects\Old_admin_page.cs" />
     <Compile Include="Page Objects\Select_a_vendor_page.cs" />
     <Compile Include="Page Objects\Home_page.cs" />
-    <Compile Include="Page Objects\BasePage.cs" />
+    <Compile Include="Utils\BaseTest.cs" />
     <Compile Include="Page Objects\Start_page.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Business objects\PortalUser.cs" />
     <Compile Include="Business objects\GlobalUser.cs" />
     <Compile Include="Utils\Browser.cs" />
     <Compile Include="Utils\BrowserCreator.cs" />
     <Compile Include="Utils\ConfigurationHelper.cs" />
+    <Compile Include="Utils\Driver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Business objects\App.config">

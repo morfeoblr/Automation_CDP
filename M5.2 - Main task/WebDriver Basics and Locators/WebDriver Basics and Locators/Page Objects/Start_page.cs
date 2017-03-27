@@ -8,11 +8,11 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
 using WebDriver_Basics_and_Locators.Utils;
-using WebDriver_Basics_and_Locators.Page_Objects;
+using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class StartPage: InitialPage
+    public class StartPage : BaseTest
     {
         private const string CompanyId = "//*[@id='txtCompanyID']";
         private const string UserId = "//*[@id='txtUserID']";
@@ -31,24 +31,24 @@ namespace WebDriver_Basics_and_Locators
         [FindsBy(How = How.XPath, Using = LoginButton)]
         private IWebElement loginButton;
 
-        public StartPage(IWebDriver driver) : base("Start page ->")
+        public StartPage()
         {
-            PageFactory.InitElements(driver, this);
+            PageFactory.InitElements(Driver.Instance, this);
         }
 
         public void OpenUrl()
         {
-            driver.Navigate().GoToUrl(Utils.ConfigurationHelper.GetEnvURL);
+            Driver.Instance.Navigate().GoToUrl(Utils.ConfigurationHelper.GetEnvURL);
         }
 
-        public SelectAVendorPage EnterCredentials(StartPage startPage)
+        public SelectAVendorPage EnterCredentials()
         {
             //   GlobalUser globalUser = new GlobalUser();
             companyId.SendKeys(GlobalUser.getUser.CompanyID);
             userId.SendKeys(GlobalUser.getUser.UserID);
             password.SendKeys(GlobalUser.getUser.Password);
             loginButton.Click();
-            return new SelectAVendorPage(startPage, driver);
+            return new SelectAVendorPage();
         }
     }
 }

@@ -9,27 +9,27 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
-using WebDriver_Basics_and_Locators.Page_Objects;
+using WebDriver_Basics_and_Locators.Utils;
 
 namespace WebDriver_Basics_and_Locators
 {
-    public class HomePage: PageDecorator
+    public class HomePage : BaseTest
     {
         private const string SearchMenu = "//a[@href='/msc/Search']";
 
         [FindsBy(How = How.XPath, Using = SearchMenu)]
         private IWebElement searchMenu;
 
-        public HomePage(InitialPage initialpage, IWebDriver driver) : base(initialpage.pagepath + " Home page ->", initialpage)
+        public HomePage()
         {
-            PageFactory.InitElements(driver, this);
+            PageFactory.InitElements(Driver.Instance, this);
         }
 
-        public SearchPage Navigate_to_Search_page(HomePage homepage)
+        public SearchPage Navigate_to_Search_page()
         {
             WaitForElementVisibility(searchMenu);
             searchMenu.Click();
-            return new SearchPage(homepage, driver);
+            return new SearchPage();
             //driver.Navigate().GoToUrl(Resource.Env_Url + "msc/Search");
         }
 
@@ -39,12 +39,12 @@ namespace WebDriver_Basics_and_Locators
             HighlightElement.highlightElement(searchMenu);
         }
 
-        public SearchPage JSClickOnSearch(HomePage homepage)
+        public SearchPage JSClickOnSearch()
         {
             WaitForElementVisibility(searchMenu);
-            IJavaScriptExecutor js = driver as IJavaScriptExecutor;
+            IJavaScriptExecutor js = Driver.Instance as IJavaScriptExecutor;
             js.ExecuteScript("arguments[0].click();", searchMenu);
-            return new SearchPage(homepage, driver);
+            return new SearchPage();
         }
     }
 }

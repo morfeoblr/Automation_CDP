@@ -9,6 +9,11 @@ namespace WebDriver_Basics_and_Locators.Utils
 {
     public static class ConfigurationHelper
     {
+        public static string GetDriver
+        {
+            get { return ConfigurationManager.AppSettings["Driver"]; }
+            private set { }
+        }
         public static string GetCompanyID
         {
             get { return ConfigurationManager.AppSettings["CompanyID"]; }
@@ -24,9 +29,19 @@ namespace WebDriver_Basics_and_Locators.Utils
             get { return ConfigurationManager.AppSettings["Password"]; }
             private set { }
         }
-        public static string GetAuthID
+        public static string GetAuthIDMSAdminUser
         {
-            get { return ConfigurationManager.AppSettings["User_auth_id"]; }
+            get { return ConfigurationManager.AppSettings["User_auth_id_admin"]; }
+            private set { }
+        }
+        public static string GetAuthIDMSEndUser
+        {
+            get { return ConfigurationManager.AppSettings["User_auth_id_end_user"]; }
+            private set { }
+        }
+        public static string GetAuthIDQAVendor
+        {
+            get { return ConfigurationManager.AppSettings["User_auth_id_qavendor"]; }
             private set { }
         }
         public static string GetEnvURL

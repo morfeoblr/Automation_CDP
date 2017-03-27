@@ -11,21 +11,28 @@ namespace WebDriver_Basics_and_Locators.Utils
 {
     public abstract class Browser
     {
-        public abstract IWebDriver InitBrowser();
+        public abstract IWebDriver driver { get;  }
     }
 
-    public class ChromeBrowser: Browser
+    public class ChromeBrowser : Browser
     {
-        public override IWebDriver InitBrowser()
+        public override IWebDriver driver
         {
-            return new ChromeDriver();
+            get
+            {
+                return new ChromeDriver();
+            }
         }
+
     }
     class FirefoxBrowser: Browser
     {
-        public override IWebDriver InitBrowser()
+        public override IWebDriver driver
         {
-            return new FirefoxDriver();
+            get
+            {
+                return new FirefoxDriver();
+            }
         }
     }
 }
